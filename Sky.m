@@ -283,25 +283,5 @@ cc.Label.FontSize = 45;
 cc.FontSize = 30;
 caxis([0 400])
 
-% 3D Dome - Direct or Diffuse
 
-figure(99)
-surf (XX,YY,ZZ,flipud((Lv_Final')))
-axis equal tight
-shading interp
-colorbar
-colormap parula
-view(67,18)
-% view(90,90)
-grid off
-zlabel('Elevation','FontSize', 16)
-set(gca,'Ydir','reverse')
-set(gca,'XTickLabel','')
-set(gca,'YTickLabel','')
-set(gca,'ZTickLabel','')
-text (0,1.25,0,'W','FontSize', 16)
-text (0,-1.25,0,'E','FontSize', 16)
-text (-1.25,0,0,'N','FontSize', 16)
-text (1.25,0,0,'S','FontSize', 16)
-caxis([0 400])
 %}
